@@ -1,0 +1,161 @@
+<!doctype html>
+<html class="w-screen overflow-x-hidden">
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,420&family=Lexend+Mega&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer base {
+      h1 {
+        @apply text-2xl;
+      }
+      h2 {
+        @apply text-xl;
+      }
+    }
+
+    body{
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+      font-family: 'Lexend Mega', sans-serif;
+    }
+    html{
+      scroll-behavior:smooth
+    }
+
+  </style>
+
+</head>
+<body class="w-screen">
+
+  <div class="flex flex-col min-h-screen">
+    <div class="w-screen h-96 bg-cover bg-no-repeat bg-center  bg-fixed p-12 text-center" style="background-image: url('tmbbackground2.jpg'); height: 400px"></div>
+    
+    <header class="sticky z-50  top-0 ">
+        <div class="w-screen flex h-18 shadow-md bg-white mb-6 py-4">
+            <div class="flex-grow"></div>
+            <ul class="flex flex-shrink gap-x-[4.75rem] text-center font-medium text-xl ">
+                <li class="flex-auto h-full">
+                    <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#aboutMe">About me</a>
+                </li>
+                <li class="flex-auto h-full">
+                    <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#projects">Projects</a>
+                </li>
+                <li class="flex-auto h-full">
+                    <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#contact">Contacts</a>
+                </li>
+            </ul>
+            <div class="flex-auto"></div>
+        </div>
+    </header>
+    <div class="flex-grow">
+      <main>
+          <div class="md:container md:mx-auto">            
+          
+          <div class="flex justify-center">
+          <div class="mx-6" style="max-width: 60rem;">
+          <h1 id="aboutMe" class="mb-8 text-4xl text-center">About me</h1>
+          
+            <p class="mb-4 text-lg" style="color:#212121; ">
+              I am a young professional, currently based in Bristol, looking to start a career in Web Design and I
+              would like to apply for the position of Junior Web Designer with your company. I am a quick learner
+              and enjoy working with others to find optimal solutions to technical problems. I have completed a
+              number of web design projects both as part of my university course and independently. I have
+              proficiency in HTML, CSS and JavaScript as well as scripting languages such as Python and PHP.
+              See my CV below for more information
+            </p>
+
+            <h2 class="text-xl mb-2">
+            Personal statement
+            </h2>
+            <p class="mb-3 text-lg" style="color:#212121; ">
+            I am a technically oriented young professional with a Diploma of Higher Education in computer science from
+            Swansea University. I enjoy playing sports, mountaineering and helping others (especially in matters regarding
+            technology). I relish the challenge of finding optimal solutions to technical problems. I am particularly
+            interested in topics regarding web technologies such as HTML, CSS and Javascript with my favourite modules
+            at university being web and android development as well as graphics programming.
+          </p>
+          <h2 class="text-xl mb-2">
+            Interests
+          </h2>
+            <p class="mb-4 text-lg" style="color:#212121;">
+            As a student, I was introduced to the sport of korfball. I went on to spend three years on the committee of
+            Swansea University Korfball Club, as treasurer as well as a year as first-team captain. I have run training
+            sessions, refereed matches in the Welsh league and shot clocked at national BUCS tournaments. This has
+            helped me to develop skills such as organisation, communication and motivating others.
+            I enjoy running and hiking in my spare time and have participated in several hiking events including the Ten
+            Tors Challenge 3 times as well as the junior trophy for the 30-mile gold Cotswold Marathon night hike in 2018.
+            I have also completed several mountaineering trips including trips to the Pyrenees, Alps, Dolomites and the
+            Atlas Mountains in Morocco. These trips have allowed me to develop skills such as perseverance, adaptability
+            and organisation.
+          </p>
+          <h2 class="text-xl mb-2">
+            Work Experience
+            </h2>
+            <p class="mb-4 text-lg" style="color:#212121;">
+            In 2017 whilst I was in Sixth Form I was employed by a local preschool to redesign their website with a focus
+            on improving responsive design and readability. I continued to maintain the site voluntarily until 2022, adding
+            both an admin portal and a dynamic list of recently published newsletters. The following link will take you to
+            this site https://www.noahsarkps.org.uk.
+            In 2018 I completed work experience with a local civil engineering and scientific consultancy firm Edenvale
+            Young. This gave me experience working in an office environment and insights into computational modelling
+            and the use of GIS software to model flood risks.
+          </p>
+          <h2 class="text-xl mb-2">
+            Programming skills
+            </h2>
+            <p class="mb-4 text-lg" style="color:#212121;">
+            I have knowledge of web technologies such as HTML, CSS and Javascript as well as experience using several
+            javascript 3D graphics libraries such as babylon.js and three.js. I am also able to program in Python and Java
+            and have some experience scripting in PHP.
+          </p>
+         </div>
+        </div>
+
+        <div class="border-t-4 border-blue-600 mt-6 mb-8"></div>
+
+          <h1 id="projects" h1 class="mb-8 text-4xl text-center">Projects</h1>
+            <div class="grid grid-cols-3 gap-4 ">
+              <a href="terrainProject.html">
+                <div class="max-w-sm w-full lg:max-w-full lg:flex shadow-xl rounded-lg ">
+                    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover bg-center text-center overflow-hidden" style="background-image: url('terrain.PNG')" title="Woman holding a mug"></div>
+                    <div class=" hover:bg-blue-200 bg-white p-4 flex flex-col justify-between leading-normal transition-colors">
+                        <div class="mb-8 ">
+                            <div class="text-gray-900 font-bold text-xl mb-2">Procedural terrain generation tool</div>
+                            <p class="text-gray-700 text-base">A web based tool for creating procedural 3D terrain by layering multiple editable layers of Perlin noise upon ont another. The resulting terrain can then be veiwed and downloaded as a height map.</p>
+                        </div>
+                    </div>
+                </div>      
+              </a>
+              </div>
+              <div class="border-t-4 border-blue-600 mt-6 mb-8"></div>
+
+              <h1 id="contact" class="mb-8 text-4xl text-center">Contact</h1>
+              <div class="flex h-32" style="margin-bottom: 6vh; padding-top: 1vh; padding-bottom: 1vh;">
+                <div class="flex-auto w-64"></div>
+                <ul class="flex-auto w-120 mb-4 text-xl" style="color:#212121;">
+                  <li><b class="mr-3">Name</b>Adam Kilgour</li>
+                  <li><b class="mr-3">Phone</b>07948749719</li>
+                  <li><b class="mr-3">Email</b>kilgouradam@gmail.com</li>                
+                </ul class="mb-16">
+                <div class="flex-auto w-64"></div>
+            </div>
+
+          </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
