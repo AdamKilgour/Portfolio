@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="w-screen overflow-x-hidden">
 <head>
-
+<title>Adam Kilgour Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,420&family=Lexend+Mega&display=swap" rel="stylesheet">
@@ -11,19 +11,10 @@
   <script src="https://cdn.tailwindcss.com">
     // https://AdamKilgour.github.io/portfolio
   </script>
-  <style>
+  <style> 
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
-
-    @layer base {
-      h1 {
-        @apply text-2xl;
-      }
-      h2 {
-        @apply text-xl;
-      }
-    }
 
     body{
       font-family: 'DM Sans', sans-serif;
@@ -33,7 +24,7 @@
       font-family: 'Lexend Mega', sans-serif;
     }
     html{
-      scroll-behavior:smooth
+      scroll-behavior:smooth;
     }
 
   </style>
@@ -49,7 +40,7 @@
             <div class="flex-grow"></div>
             <ul class="flex flex-shrink gap-x-[4.75rem] text-center font-medium text-xl ">
                 <li class="flex-auto h-full">
-                    <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#aboutMe">About me</a>
+                    <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#aboutMe">About Me</a>
                 </li>
                 <li class="flex-auto h-full">
                     <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#projects">Projects</a>
@@ -67,19 +58,11 @@
           
           <div class="flex justify-center">
           <div class="mx-6" style="max-width: 60rem;">
-          <h1 id="aboutMe" class="mb-8 text-4xl text-center">About me</h1>
-          
-            <p class="mb-4 text-lg" style="color:#212121; ">
-              I am a young professional, currently based in Bristol, looking to start a career in Web Design and I
-              would like to apply for the position of Junior Web Designer with your company. I am a quick learner
-              and enjoy working with others to find optimal solutions to technical problems. I have completed a
-              number of web design projects both as part of my university course and independently. I have
-              proficiency in HTML, CSS and JavaScript as well as scripting languages such as Python and PHP.
-              See my CV below for more information
-            </p>
-
+            <h1 id="aboutMe" class="mb-8 text-4xl text-center">
+              About me
+            </h1>
             <h2 class="text-xl mb-2">
-            Personal statement
+              Personal statement
             </h2>
             <p class="mb-3 text-lg" style="color:#212121; ">
             I am a technically oriented young professional with a Diploma of Higher Education in computer science from
@@ -109,7 +92,7 @@
             In 2017 whilst I was in Sixth Form I was employed by a local preschool to redesign their website with a focus
             on improving responsive design and readability. I continued to maintain the site voluntarily until 2022, adding
             both an admin portal and a dynamic list of recently published newsletters. The following link will take you to
-            this site https://www.noahsarkps.org.uk.
+            this site 
             In 2018 I completed work experience with a local civil engineering and scientific consultancy firm Edenvale
             Young. This gave me experience working in an office environment and insights into computational modelling
             and the use of GIS software to model flood risks.
@@ -128,36 +111,52 @@
         <div class="border-t-4 border-blue-600 mt-6 mb-8"></div>
 
           <h1 id="projects" h1 class="mb-8 text-4xl text-center">Projects</h1>
-            <div class="grid grid-cols-3 gap-4 ">
-              <a href="terrainProject.html">
-                <div class="max-w-sm w-full lg:max-w-full lg:flex shadow-xl rounded-lg ">
-                    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover bg-center text-center overflow-hidden" style="background-image: url('terrain.PNG')" title="Woman holding a mug"></div>
-                    <div class=" hover:bg-blue-200 bg-white p-4 flex flex-col justify-between leading-normal transition-colors">
-                        <div class="mb-8 ">
-                            <div class="text-gray-900 font-bold text-xl mb-2">Procedural terrain generation tool</div>
-                            <p class="text-gray-700 text-base">A web based tool for creating procedural 3D terrain by layering multiple editable layers of Perlin noise upon ont another. The resulting terrain can then be veiwed and downloaded as a height map.</p>
-                        </div>
-                    </div>
-                </div>      
-              </a>
+            <div class="flex flex-wrap gap-6" style="justify-content: center;">
+
+              <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl transition-colors hover:bg-blue-200">
+                <div class="md:flex">
+                  <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="terrain.PNG" alt="Modern building architecture">
+                  </div>
+                  <div class="p-8">
+                    <h3 class="tracking-wide text-lg">Procedural terrain generation tool</h3>
+                    <p class="mt-2 text-md" style="color:#212121;">
+                      A web based tool for creating procedural 3D terrain by layering multiple editable layers of Perlin noise upon ont another. The resulting terrain can then be veiwed and downloaded as a height map.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="border-t-4 border-blue-600 mt-6 mb-8"></div>
 
-              <h1 id="contact" class="mb-8 text-4xl text-center">Contact</h1>
-              <div class="flex h-32" style="margin-bottom: 6vh; padding-top: 1vh; padding-bottom: 1vh;">
-                <div class="flex-auto w-64"></div>
-                <ul class="flex-auto w-120 mb-4 text-xl" style="color:#212121;">
-                  <li><b class="mr-3">Name</b>Adam Kilgour</li>
-                  <li><b class="mr-3">Phone</b>07948749719</li>
-                  <li><b class="mr-3">Email</b>kilgouradam@gmail.com</li>                
-                </ul class="mb-16">
-                <div class="flex-auto w-64"></div>
+              <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl transition-colors hover:bg-blue-200">
+                <div class="md:flex">
+                  <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="noahsArkpic.PNG" alt="Modern building architecture">
+                  </div>
+                  <div class="p-8">
+                    <h3 class="tracking-wide text-lg">Noahs Ark Pre-school website</h3>
+                    <p class="mt-2 text-md" style="color:#212121;">
+                      A wordpress website I built for a local charity whilst in sixth form and maintained up until 2021.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
+            <div class="border-t-4 border-blue-600 mt-6 mb-8"></div>
 
+            <h1 id="contact" class="mb-8 text-4xl text-center">Contact</h1>
+            <div class="flex h-32" style="margin-bottom: 6vh; padding-top: 1vh; padding-bottom: 1vh;">
+            <div class="flex-auto w-64"></div>
+            <ul class="flex-auto w-120 mb-4 text-xl" style="color:#212121;">
+              <li><b class="mr-3">Name</b>Adam Kilgour</li>
+              <li><b class="mr-3">Phone</b>07948749719</li>
+              <li><b class="mr-3">Email</b>kilgouradam@gmail.com</li>                
+            </ul class="mb-16">
+            <div class="flex-auto w-64"></div>
+            </div>
           </div>
-      </main>
+        </main>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
