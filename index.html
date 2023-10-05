@@ -1,44 +1,28 @@
+<!-- https://AdamKilgour.github.io/portfolio  -->
 <!doctype html>
-<html class="w-screen overflow-x-hidden">
+<html>
 <head>
 <title>Adam Kilgour Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,420&family=Lexend+Mega&display=swap" rel="stylesheet">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com">
-    // https://AdamKilgour.github.io/portfolio
-  </script>
-  <style> 
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-
-    body{
-      font-family: 'DM Sans', sans-serif;
-    }
-
-    h1, h2, h3, h4, h5, h6{
-      font-family: 'Lexend Mega', sans-serif;
-    }
-    html{
-      scroll-behavior:smooth;
-    }
-
-  </style>
+<link href="global.css" rel="stylesheet">
+<link href="new_css_file.css" rel="stylesheet">
 
 </head>
-<body class="w-screen">
+<body class="w-screen overflow-x-hidden">
 
   <div class="flex flex-col min-h-screen">
-    <div class="w-screen h-96 bg-cover bg-no-repeat bg-center  bg-fixed p-12 text-center" style="background-image: url('tmbbackground2.jpg'); height: 400px"></div>
+    <div class="w-screen h-96 bg-cover bg-no-repeat bg-center  bg-fixed p-12 text-center" style="background-image: url('tmbbackground2.jpg');"></div>
     
     <header class="sticky z-50  top-0 ">
         <div class="w-screen flex h-18 shadow-md bg-white mb-6 py-4">
             <div class="flex-grow"></div>
-            <ul class="flex flex-shrink gap-x-[4.75rem] text-center font-medium text-xl ">
+            <ul class="flex flex-shrink gap-x-16 text-center font-medium text-xl ">
                 <li class="flex-auto h-full">
                     <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#aboutMe">About Me</a>
                 </li>
@@ -53,109 +37,137 @@
         </div>
     </header>
     <div class="flex-grow">
-      <main>
-          <div class="md:container md:mx-auto">            
+      <main class="container mx-auto">
+        
+          <h1 id="aboutMe" class="mb-8 text-4xl text-center">
+            About me
+          </h1>
+
+          <div class="max-w-4xl mx-auto">
+
           
-          <div class="flex justify-center">
-          <div class="mx-6" style="max-width: 60rem;">
-            <h1 id="aboutMe" class="mb-8 text-4xl text-center">
-              About me
-            </h1>
-            <h2 class="text-xl mb-2">
-              Personal statement
-            </h2>
-            <p class="mb-3 text-lg" style="color:#212121; ">
-            I am a technically oriented young professional with a Diploma of Higher Education in computer science from
-            Swansea University. I enjoy playing sports, mountaineering and helping others (especially in matters regarding
-            technology). I relish the challenge of finding optimal solutions to technical problems. I am particularly
-            interested in topics regarding web technologies such as HTML, CSS and Javascript with my favourite modules
-            at university being web and android development as well as graphics programming.
-          </p>
+          <div class="mx-auto">
           <h2 class="text-xl mb-2">
-            Interests
+            Personal statement
           </h2>
-            <p class="mb-4 text-lg" style="color:#212121;">
-            As a student, I was introduced to the sport of korfball. I went on to spend three years on the committee of
-            Swansea University Korfball Club, as treasurer as well as a year as first-team captain. I have run training
-            sessions, refereed matches in the Welsh league and shot clocked at national BUCS tournaments. This has
-            helped me to develop skills such as organisation, communication and motivating others.
-            I enjoy running and hiking in my spare time and have participated in several hiking events including the Ten
-            Tors Challenge 3 times as well as the junior trophy for the 30-mile gold Cotswold Marathon night hike in 2018.
-            I have also completed several mountaineering trips including trips to the Pyrenees, Alps, Dolomites and the
-            Atlas Mountains in Morocco. These trips have allowed me to develop skills such as perseverance, adaptability
-            and organisation.
-          </p>
-          <h2 class="text-xl mb-2">
-            Work Experience
-            </h2>
-            <p class="mb-4 text-lg" style="color:#212121;">
-            In 2017 whilst I was in Sixth Form I was employed by a local preschool to redesign their website with a focus
-            on improving responsive design and readability. I continued to maintain the site voluntarily until 2022, adding
-            both an admin portal and a dynamic list of recently published newsletters. The following link will take you to
-            this site 
-            In 2018 I completed work experience with a local civil engineering and scientific consultancy firm Edenvale
-            Young. This gave me experience working in an office environment and insights into computational modelling
-            and the use of GIS software to model flood risks.
-          </p>
-          <h2 class="text-xl mb-2">
-            Programming skills
-            </h2>
-            <p class="mb-4 text-lg" style="color:#212121;">
-            I have knowledge of web technologies such as HTML, CSS and Javascript as well as experience using several
-            javascript 3D graphics libraries such as babylon.js and three.js. I am also able to program in Python and Java
-            and have some experience scripting in PHP.
-          </p>
-         </div>
-        </div>
+          <p class="mb-3 text-lg text-bodyText" >
+          I am a technically oriented young professional with a Diploma of Higher Education in computer science from
+          Swansea University. I enjoy playing sports, mountaineering and helping others (especially in matters regarding
+          technology). I relish the challenge of finding optimal solutions to technical problems. I am particularly
+          interested in topics regarding web technologies such as HTML, CSS and Javascript with my favourite modules
+          at university being web and android development as well as graphics programming.
+        </p>
+        <h2 class="text-xl mb-2">
+          Interests
+        </h2>
+          <p class="mb-4 text-lg text-bodyText">
+          As a student, I was introduced to the sport of korfball. I went on to spend three years on the committee of
+          Swansea University Korfball Club, as treasurer as well as a year as first-team captain. I have run training
+          sessions, refereed matches in the Welsh league and shot clocked at national BUCS tournaments. This has
+          helped me to develop skills such as organisation, communication and motivating others.
+          I enjoy running and hiking in my spare time and have participated in several hiking events including the Ten
+          Tors Challenge 3 times as well as the junior trophy for the 30-mile gold Cotswold Marathon night hike in 2018.
+          I have also completed several mountaineering trips including trips to the Pyrenees, Alps, Dolomites and the
+          Atlas Mountains in Morocco. These trips have allowed me to develop skills such as perseverance, adaptability
+          and organisation.
+        </p>
+        <h2 class="text-xl mb-2">
+          Work Experience
+          </h2>
+          <p class="mb-4 text-lg text-bodyText">
+          In 2017 whilst I was in Sixth Form I was employed by a local preschool to redesign their website with a focus
+          on improving responsive design and readability. I continued to maintain the site voluntarily until 2022, adding
+          both an admin portal and a dynamic list of recently published newsletters. The following link will take you to
+          this site 
+          In 2018 I completed work experience with a local civil engineering and scientific consultancy firm Edenvale
+          Young. This gave me experience working in an office environment and insights into computational modelling
+          and the use of GIS software to model flood risks.
+        </p>
+        <h2 class="text-xl mb-2">
+          Programming skills
+          </h2>
+          <p class="mb-4 text-lg">
+          I have knowledge of web technologies such as HTML, CSS and Javascript as well as experience using several
+          javascript 3D graphics libraries such as babylon.js and three.js. I am also able to program in Python and Java
+          and have some experience scripting in PHP.
+        </p>
+      </div>
 
-        <div class="border-t-4 border-blue-600 mt-6 mb-8"></div>
+    </div>
 
-          <h1 id="projects" h1 class="mb-8 text-4xl text-center">Projects</h1>
-            <div class="flex flex-wrap gap-6 mx-6" style="justify-content: center;">
+      <div class="border-t-4 border-blue-600 mt-6 mb-8"></div>
 
-              <a href="terrainProject.html" class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl transition-colors hover:bg-blue-200">
-                <div class="md:flex">
-                  <div class="md:shrink-0">
-                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="terrain.png" alt="Modern building architecture">
-                  </div>
-                  <div class="p-8">
-                    <h3 class="tracking-wide text-lg">Procedural terrain generation tool</h3>
-                    <p class="mt-2 text-md" style="color:#212121;">
-                      A web based tool for creating procedural 3D terrain by layering multiple editable layers of Perlin noise upon ont another. The resulting terrain can then be veiwed and downloaded as a height map.
-                    </p>
-                  </div>
-                </div>
-              </a>
+        <h1 id="projects" h1 class="mb-8 text-4xl text-center">Projects</h1>
+        <div class="flex flex-wrap gap-6 mx-6 justify-center">
+        
 
-              <a href="https://www.noahsarkps.org.uk/" class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl transition-colors hover:bg-blue-200">
-                <div class="md:flex">
-                  <div class="md:shrink-0">
-                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="noahsArkpic.png" alt="Modern building architecture">
-                  </div>
-                  <div class="p-8">
-                    <h3 class="tracking-wide text-lg">Noahs Ark Pre-school website</h3>
-                    <p class="mt-2 text-md" style="color:#212121;">
-                      A wordpress website I built for a local charity whilst in sixth form and maintained up until 2021.
-                    </p>
-                  </div>
-                </div>
-              </a>
-
+        <a href="terrainProject.html" class="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl transition-colors hover:bg-blue-200">
+          <div class="md:flex">
+            <img class="w-full object-cover md:w-48" src="terrain.png" alt="Modern building architecture">
+            <div class="p-8">
+              <h3 class="tracking-wide text-lg">Procedural terrain generation tool</h3>
+              <p class="mt-2 text-md text-bodyText">
+                A web based tool for creating procedural 3D terrain by layering multiple editable layers of Perlin noise upon ont another. The resulting terrain can then be veiwed and downloaded as a height map.
+              </p>
             </div>
-            <div class="border-t-4 border-blue-600 mt-6 mb-8"></div>
-
-            <h1 id="contact" class="mb-8 text-4xl text-center">Contact</h1>
-            <div class="flex h-32" style="margin-bottom: 6vh; padding-top: 1vh; padding-bottom: 1vh;">
-            <div class="flex-auto w-64"></div>
-            <ul class="flex-auto w-120 mb-4 text-xl" style="color:#212121;">
-              <li><b class="mr-3">Name</b>Adam Kilgour</li>
-              <li><b class="mr-3">Phone</b>07948749719</li>
-              <li><b class="mr-3">Email</b>kilgouradam@gmail.com</li>
-              <a href="cv.pdf" class="text-blue-700 text-xl">Click here for my CV</a>                
-            </ul class="mb-16">
-            
           </div>
-            <div class="flex-auto w-64"></div>
+        </a>
+
+        <a href="terrainProject.html" class="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl transition-colors hover:bg-blue-200">
+          <div class="md:flex">
+            <img class="w-full object-cover md:w-48" src="noahsArkpic.png" alt="Modern building architecture">
+            <div class="p-8">
+              <h3 class="tracking-wide text-lg">Noahs Ark Pre-school website</h3>
+              <p class="mt-2 text-md text-bodyText">
+                A wordpress website I built for a local charity whilst in sixth form and maintained up until 2021.
+              </p>
+            </div>
+          </div>
+        </a>
+
+          <!--
+          <a href="https://www.noahsarkps.org.uk/" class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl transition-colors hover:bg-blue-200">
+            <div class="md:flex">
+              <div class="md:shrink-0">
+                <img class="h-48 w-full object-cover md:h-full md:w-48" src="noahsArkpic.png" alt="Modern building architecture">
+              </div>
+              <div class="p-8">
+                <h3 class="tracking-wide text-lg">Procedural terrain generation tool</h3>
+                <p class="mt-2 text-md text-bodyText">
+                  A web based tool for creating procedural 3D terrain by layering multiple editable layers of Perlin noise upon ont another. The resulting terrain can then be veiwed and downloaded as a height map.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.noahsarkps.org.uk/" class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl transition-colors hover:bg-blue-200">
+            <div class="md:flex">
+              <div class="md:shrink-0">
+                <img class="h-48 w-full object-cover md:h-full md:w-48" src="noahsArkpic.png" alt="Modern building architecture">
+              </div>
+              <div class="p-8">
+                <h3 class="tracking-wide text-lg">Noahs Ark Pre-school website</h3>
+                <p class="mt-2 text-md text-bodyText">
+                  A wordpress website I built for a local charity whilst in sixth form and maintained up until 2021.
+                </p>
+              </div>
+            </div>
+          </a>
+          -->
+
+          </div>
+          <div class="border-t-4 border-blue-600 mt-6 mb-8"></div>
+
+          <h1 id="contact" class="mb-8 text-4xl text-center">Contact</h1>
+          <div class="flex h-32 text-bodyText" style="margin-bottom: 6vh; padding-top: 1vh; padding-bottom: 1vh;">
+          <div class="flex-auto w-64"></div>
+          <ul class="flex-auto w-120 mb-4 text-xl text-bodyText">
+            <li><b class="mr-3">Name</b>Adam Kilgour</li>
+            <li><b class="mr-3">Phone</b>07948749719</li>
+            <li><b class="mr-3">Email</b>kilgouradam@gmail.com</li>
+            <a href="cv.pdf" class="text-blue-700 text-xl">Click here for my CV</a>                
+          </ul class="mb-16">
+          
           </div>
         </main>
       </div>
