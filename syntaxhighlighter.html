@@ -1,0 +1,134 @@
+ <ul class="flex-auto w-120 mb-4 text-xl bg-blue-900 text-white width-48 py-4 px-6 rounded-lg codeBlock" id="codeBlock1">
+          <li><b class="mr-3 codeBlockLine">1</b><span class="codeText">print("hello world")</span></li>
+          <li><b class="mr-3 codeBlockLine">2</b><span class="codeText">print("cheese and bacon")</span></li>
+        </ul>
+        <script>
+          for (line in document.getElementsByClassName('codeText')){
+          // extract text from line and then clear text
+          rawText = document.getElementsByClassName('codeText')[line].innerHTML;
+          document.getElementsByClassName('codeText')[line].innerHTML = "";
+          
+          // recursive deck spliiting
+          // Add new span upon interesting find
+
+          var temp = "";
+          function deckSplit(pointer){
+            switch(rawText[pointer]){
+              case "/" :
+                if ((pointer + 1) < rawText.length){
+                  if (rawText[pointer + 1] == "/"){
+                    document.getElementsByClassName('codeText')[line].insertAdjacentHTML('beforeend', `<span class="text-red-300">${codeArray[item]}</span>`);
+                  }
+                }
+
+              break
+            }
+          
+            if (pointer < rawText.length){
+              deckSplit(pointer+1);
+            }
+          }
+
+
+
+      //    frontPointer = 0;
+      //    backpointer = 0;
+      //    scanning = true;
+      //    while(scanning == true){
+      //      scanning = false
+      //    }
+
+          }
+
+        /*
+        for (line in document.getElementsByClassName('codeText')){
+          rawText = document.getElementsByClassName('codeText')[line].innerHTML;
+          document.getElementsByClassName('codeText')[line].innerHTML = "";
+          //rawText.trim();
+          var pointer1 = 0;
+          var pointer2 = 0;
+         
+          function isinteresting(char){
+            switch (char){
+              case `"`:
+                return true
+                break;
+              case " ":
+                return true
+                break;
+
+              case ".": 
+                return true
+                break;
+
+              case ")": 
+                return true
+                break;
+
+              case "(": 
+                return true
+                break;
+
+              default: 
+                return false
+              }
+          }
+
+          var codeArray = [];
+          while (pointer2 < rawText.length){
+            pointer1 += 1;     
+            if (isinteresting(rawText[pointer1]) || pointer1 == rawText.length){
+              codeArray.push(rawText.slice(pointer2, pointer1));
+              pointer2 = pointer1;
+            }
+          }
+
+          for(item in codeArray){
+
+            console.log(codeArray[item])
+            
+            var col = "white";
+            //item first char 
+            switch (codeArray[item].replace("(","")[0]){
+              case `"`:
+                col = "green-300";
+                break;
+              }
+
+              // item last char
+              switch (codeArray[item].replace(")","")[codeArray[item].length - 1]){
+              case `"`:
+                col = "green-300";
+                break;
+              }
+              
+              // first char of next item
+              if(item < codeArray.length - 1){
+                switch (codeArray[(parseInt(item) + 1).toString()][0]){
+                  case `"`:
+                    // remove formating of opening brackets before string text
+                    if (codeArray[item] != "("){col = "green-300";}
+                    break;
+                  }
+              }
+
+              // item is keyword
+              switch (codeArray[item].replace("(","")){
+              case `print`:
+              col = "red-300";
+              break;
+              case `def`:
+              col = "red-300";
+              break;
+              case `for`:
+              col = "red-300";
+              break;
+              case `while`:
+              col = "red-300";
+              break;
+              }            
+         document.getElementsByClassName('codeText')[line].insertAdjacentHTML('beforeend', `<span class="text-${col}">${codeArray[item]}</span>`);
+        }
+      }
+      */
+        </script>

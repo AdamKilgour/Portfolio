@@ -1,6 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+
+/**
+npx tailwindcss-cli -i global.css -o new_css_file.css
+*/
+
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  darkMode: 'class',
   theme: {
     screens: {
       'sm': '640px',
