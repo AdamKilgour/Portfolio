@@ -74,7 +74,7 @@
   
   <div class="bg-white top-96">
     <div class="flex-grow w-screen">
-      <main class="container mx-auto px-6">
+      <main class="container mx-auto px-4">
         <img src="face.jpg" class="rounded-full w-64 h-64 mx-auto my-4">
         <h1 id="aboutMe" class="mt-8 mb-8 text-4xl text-center">About me</h1>
         <div class="max-w-4xl mx-auto">
@@ -133,28 +133,37 @@
       <h1 id="projects" h1 class="mb-8 text-4xl text-center">Projects</h1>
       <div class="flex flex-col flex-wrap gap-16 mx-auto container">
         
-        <div class="px-32 py-16 h-96 bg-cover rounded-xl" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('terrain.png');">        
+        <a href="terrainProject.html" class="project px-32 py-16 min-h-96 bg-cover rounded-xl" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('terrain.png');">        
           <h3 class="tracking-wide text-2xl text-white">Procedural terrain generation tool</h3>
           <p class="mt-2 text-md text-white text-xl" style="font-family: 'DM Sans', sans-serif;">
             A web based tool for creating procedural 3D terrain by layering multiple editable layers of Perlin noise upon ont another. The resulting terrain can then be veiwed and downloaded as a height map.
           </p>
-        </div>
+        </a>
         
-        <div class="px-32 py-16 h-96 bg-cover rounded-xl" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url( 'noahsArkpic.png');">
+        <a href="https://www.noahsarkps.org.uk/" class="project px-32 py-16 min-h-96 bg-cover rounded-xl" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url( 'noahsArkpic.png');">
           <h3 class="tracking-wide text-2xl text-white">Noahs Ark Pre-school website</h3>
           <p class="mt-2 text-md text-white text-xl" style="font-family: 'DM Sans', sans-serif;">
             A wordpress website I built for a local charity whilst in sixth form and maintained up until 2021.
           </p>
-        </div>
+        </a>
         
-        <div class="px-32 py-16 h-96 bg-cover rounded-xl" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('EulerThumbnail.png');">
+        <a href="ProjectEuler.html" class="project px-32 py-16 min-h-96 bg-cover rounded-xl" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('EulerThumbnail.png');">
           <h3 class="tracking-wide text-2xl text-white">Project Euler</h3>
           <p class="mt-2 text-md text-white text-xl" style="font-family: 'DM Sans', sans-serif;">
             Python code that solves problems from the Project Euler website https://projecteuler.net/.
           </p>
-        </div>
+        </a>
       </div> 
     </div>
+    <style>
+      .project{
+        transition: all 0.6s;
+      }
+      .project:hover{
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        opacity: 0.8;
+      }
+    </style>
     
   </div>
 </main>
