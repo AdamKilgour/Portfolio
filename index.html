@@ -2,164 +2,162 @@
 <!doctype html>
 <html>
 <head>
-<title>Adam Kilgour Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,420&family=Lexend+Mega&display=swap" rel="stylesheet">
-
-<!-- Tailwind stylesheets -->
-<link href="global.css" rel="stylesheet">
-<link href="new_css_file.css" rel="stylesheet">
-
-<!-- Code syntax stylesheet -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-python.min.js"></script>
-
-<!-- MathsJax -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
-    }
-  };
-  </script>
-  <script id="MathJax-script" async
+  <title>Adam Kilgour Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Parralax CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,420&family=Lexend+Mega&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind stylesheets -->
+  <link href="global.css" rel="stylesheet">
+  <link href="new_css_file.css" rel="stylesheet">
+  
+  <!-- Code syntax stylesheet  -->
+  <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-python.min.js"></script>
+    
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
   </script>
-
+-->
 </head>
-<body class="w-screen overflow-x-hidden">
-
-    <header class="sticky z-50  top-0 ">
-        <div class="w-screen flex h-18 shadow-md bg-white mb-6 py-4">
-            <div class="flex-grow"></div>
-            <ul class="flex flex-shrink gap-x-16 text-center font-medium text-xl ">
-                <li class="flex-auto h-full">
-                    <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#aboutMe">About Me</a>
-                </li>
-                <li class="flex-auto h-full">
-                    <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#projects">Projects</a>
-                </li>
-                <li class="flex-auto h-full">
-                    <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#contact">Contacts</a>
-                </li>
-            </ul>
-            <div class="flex-auto"></div>
-        </div>
-    </header>
-    <div class="flex-grow dark:bg-slate-800">
-      <main class="container mx-auto px-4">
-        
-          <h1 id="aboutMe" class="mb-8 text-4xl text-center">
-            About me
-          </h1>
-          <div class="max-w-4xl mx-auto">
-          
-          <div class="mx-auto">
-          <h2 class="text-xl mb-2">
-            Personal statement
-          </h2>
-          <a href="cv.pdf" class="text-xl">Click here for my CV</a> 
-        <p class="bodyText">
-        I am a technically oriented young professional with a Diploma of Higher Education in computer science from
-        Swansea University. I enjoy playing sports, mountaineering and helping others (especially in matters regarding
-        technology). I relish the challenge of finding optimal solutions to technical problems. I am particularly
-        interested in topics regarding web technologies such as HTML, CSS and Javascript with my favourite modules
-        at university being web and android development as well as graphics programming.
-        </p>
-        <h2 class="text-xl mb-2">
-        Interests
-        </h2>
-        <p class="bodyText">
-        As a student, I was introduced to the sport of korfball. I went on to spend three years on the committee of
-        Swansea University Korfball Club, as treasurer as well as a year as first-team captain. I have run training
-        sessions, refereed matches in the Welsh league and shot clocked at national BUCS tournaments. This has
-        helped me to develop skills such as organisation, communication and motivating others.
-        I enjoy running and hiking in my spare time and have participated in several hiking events including the Ten
-        Tors Challenge 3 times as well as the junior trophy for the 30-mile gold Cotswold Marathon night hike in 2018.
-        I have also completed several mountaineering trips including trips to the Pyrenees, Alps, Dolomites and the
-        Atlas Mountains in Morocco. These trips have allowed me to develop skills such as perseverance, adaptability
-        and organisation.
-        </p>
-        <h2 class="text-xl mb-2">
-        Work Experience
-        </h2>
-        <p class="bodyText">
-        In 2017 whilst I was in Sixth Form I was employed by a local preschool to redesign their website with a focus
-        on improving responsive design and readability. I continued to maintain the site voluntarily until 2022, adding
-        both an admin portal and a dynamic list of recently published newsletters. The following link will take you to
-        this site 
-        In 2018 I completed work experience with a local civil engineering and scientific consultancy firm Edenvale
-        Young. This gave me experience working in an office environment and insights into computational modelling
-        and the use of GIS software to model flood risks.
-        </p>
-        <h2 class="text-xl mb-2">
-        Programming skills
-        </h2>
-        <p class="bodyText">
-        I have knowledge of web technologies such as HTML, CSS and Javascript as well as experience using several
-        javascript 3D graphics libraries such as babylon.js and three.js. I am also able to program in Python and Java
-        and have some experience scripting in PHP.
-        </p>
-
-        </div>
-
-     </div>
-        
-      </div>
-
+<body class="pb-8">
+  <div style="height: 50vh;">
+    <img id="banner" src="morroco.jpg" class="bg-cover w-full" style="height:50vh;" alt="">
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js/dist/simpleParallax.min.js"></script>
+    <script>
+      // <img src="tmbbackground2.jpg" id="parallaxBG" alt="">
+      var banner = document.getElementById('banner');
+      new simpleParallax(banner, {
+        scale: 1.6, // The scale factor of the image
+        orientation: 'down'
+      });
+    </script>
+  </div>
+  
+  <header class="sticky z-50 top-0 bg-white">
+    <div class="w-screen flex h-18 shadow-md py-4">
+      <div class="flex-grow"></div>
+      <ul class="flex flex-shrink gap-x-16 text-center font-medium text-xl ">
+        <li class="flex-auto h-full">
+          <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#aboutMe">About Me</a>
+        </li>
+        <li class="flex-auto h-full">
+          <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#projects">Projects</a>
+        </li>
+        <li class="flex-auto h-full">
+          <a class="text-blue-700 hover:text-white hover:bg-blue-700 text-center transition-colors rounded-lg px-2 py-2" href="#contact">Contacts</a>
+        </li>
+      </ul>
+      <div class="flex-auto"></div>
     </div>
-
-        <h1 id="projects" h1 class="mb-8 text-4xl text-center">Projects</h1>
-        <div class="flex flex-wrap gap-4 mx-6">
-
-        <a href="terrainProject.html" class="md:flex h-48 basis-1/2 mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl transition-colors hover:bg-blue-200">          
-            <img class="w-full object-cover md:w-48" src="terrain.png">
-            <div class="px-8 pb-4">
-              <h3 class="tracking-wide text-lg">Procedural terrain generation tool</h3>
-              <p class="mt-2 text-md text-bodyText">
-                A web based tool for creating procedural 3D terrain by layering multiple editable layers of Perlin noise upon ont another. The resulting terrain can then be veiwed and downloaded as a height map.
-              </p>
-            </div>
-        </a>
-
-        <a href="terrainProject.html" class="md:flex h-48 basis-1/2 mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl transition-colors hover:bg-blue-200">
-            <img class="w-full object-cover md:w-48" src="noahsArkpic.png">
-            <div class="px-8 pb-4">
-              <h3 class="tracking-wide text-lg">Noahs Ark Pre-school website</h3>
-              <p class="mt-2 text-md text-bodyText">
-                A wordpress website I built for a local charity whilst in sixth form and maintained up until 2021.
-              </p>
-            </div>
-        </a>
-
-        <a href="ProjectEuler.html" class="md:flex h-48 basis-1/2 mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl transition-colors hover:bg-blue-200">
-            <img class="w-full object-cover md:w-48" src="EulerThumbnail.png">
-            <div class="px-8 pb-4">
-              <h3 class="tracking-wide text-lg">Project Euler</h3>
-              <p class="mt-2 text-md text-bodyText">
-               Python code that solves problems from the Project Euler website https://projecteuler.net/.
-              </p>
-            </div>
-        </a>
-          </div> 
+  </header>
+  
+  
+  <div class="bg-white top-96">
+    <div class="flex-grow w-screen">
+      <main class="container mx-auto px-6">
+        <img src="face.jpg" class="rounded-full w-64 h-64 mx-auto my-4">
+        <h1 id="aboutMe" class="mt-8 mb-8 text-4xl text-center">About me</h1>
+        <div class="max-w-4xl mx-auto">
+          <div class="mx-auto">
+            <h2 class="text-xl mb-2">
+              Personal statement
+            </h2>
+            <a href="cv.pdf" class="text-xl">Click here for my CV</a> 
+            <p class="bodyText">
+              I am a technically oriented young professional with a Diploma of Higher Education in computer science from
+              Swansea University. I enjoy playing sports, mountaineering and helping others (especially in matters regarding
+              technology). I relish the challenge of finding optimal solutions to technical problems. I am particularly
+              interested in topics regarding web technologies such as HTML, CSS and Javascript with my favourite modules
+              at university being web and android development as well as graphics programming.
+            </p>
+            <h2 class="text-xl mb-2">
+              Interests
+            </h2>
+            <p class="bodyText">
+              As a student, I was introduced to the sport of korfball. I went on to spend three years on the committee of
+              Swansea University Korfball Club, as treasurer as well as a year as first-team captain. I have run training
+              sessions, refereed matches in the Welsh league and shot clocked at national BUCS tournaments. This has
+              helped me to develop skills such as organisation, communication and motivating others.
+              I enjoy running and hiking in my spare time and have participated in several hiking events including the Ten
+              Tors Challenge 3 times as well as the junior trophy for the 30-mile gold Cotswold Marathon night hike in 2018.
+              I have also completed several mountaineering trips including trips to the Pyrenees, Alps, Dolomites and the
+              Atlas Mountains in Morocco. These trips have allowed me to develop skills such as perseverance, adaptability
+              and organisation.
+            </p>
+            <h2 class="text-xl mb-2">
+              Work Experience
+            </h2>
+            <p class="bodyText">
+              In 2017 whilst I was in Sixth Form I was employed by a local preschool to redesign their website with a focus
+              on improving responsive design and readability. I continued to maintain the site voluntarily until 2022, adding
+              both an admin portal and a dynamic list of recently published newsletters. The following link will take you to
+              this site 
+              In 2018 I completed work experience with a local civil engineering and scientific consultancy firm Edenvale
+              Young. This gave me experience working in an office environment and insights into computational modelling
+              and the use of GIS software to model flood risks.
+            </p>
+            <h2 class="text-xl mb-2">
+              Programming skills
+            </h2>
+            <p class="bodyText">
+              I have knowledge of web technologies such as HTML, CSS and Javascript as well as experience using several
+              javascript 3D graphics libraries such as babylon.js and three.js. I am also able to program in Python and Java
+              and have some experience scripting in PHP.
+            </p>
           </div>
-        </main>
-
-        <footer class="bg-gray-800 w-screen h-48 mt-16">
-          <h1 id="contact" class="text-white pt-4 text-2xl px-6">Contact</h1>
-          <ul class="pb-4 pt-2 pl-6 w-120 mb-4 text-xl text-bodyText ">
-            <li class="text-white"><b class="mr-3">Name</b>Adam Kilgour</li>
-            <li class="text-white"><b class="mr-3">Phone</b>07948749719</li>
-            <li class="text-white"><b class="mr-3">Email</b>kilgouradam@gmail.com</li>               
-          </ul class="mb-16">   
-      </footer>
-  </body>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pt-16">
+      <h1 id="projects" h1 class="mb-8 text-4xl text-center">Projects</h1>
+      <div class="flex flex-col flex-wrap gap-16 mx-auto container">
+        
+        <div class="px-32 py-16 h-96 bg-cover rounded-xl" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('terrain.png');">        
+          <h3 class="tracking-wide text-2xl text-white">Procedural terrain generation tool</h3>
+          <p class="mt-2 text-md text-white text-xl" style="font-family: 'DM Sans', sans-serif;">
+            A web based tool for creating procedural 3D terrain by layering multiple editable layers of Perlin noise upon ont another. The resulting terrain can then be veiwed and downloaded as a height map.
+          </p>
+        </div>
+        
+        <div class="px-32 py-16 h-96 bg-cover rounded-xl" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url( 'noahsArkpic.png');">
+          <h3 class="tracking-wide text-2xl text-white">Noahs Ark Pre-school website</h3>
+          <p class="mt-2 text-md text-white text-xl" style="font-family: 'DM Sans', sans-serif;">
+            A wordpress website I built for a local charity whilst in sixth form and maintained up until 2021.
+          </p>
+        </div>
+        
+        <div class="px-32 py-16 h-96 bg-cover rounded-xl" style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('EulerThumbnail.png');">
+          <h3 class="tracking-wide text-2xl text-white">Project Euler</h3>
+          <p class="mt-2 text-md text-white text-xl" style="font-family: 'DM Sans', sans-serif;">
+            Python code that solves problems from the Project Euler website https://projecteuler.net/.
+          </p>
+        </div>
+      </div> 
+    </div>
+    
+  </div>
+</main>
+</div>
+</body>
 </html>
