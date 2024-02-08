@@ -49,7 +49,7 @@
                 <div id="toolbar">
                     <button class="btn waves-effect waves-light" type="submit" name="action" id="NewLayerBtn">Add layer</button>
                 </div>
-            <div id="layerToolbar" style="height:100vh; display: flex; flex-direction: column; overflow-y: scroll; padding-bottom:4vh;"></div>
+            <div id="layerToolbar" style="height:100vh; display: flex; flex-direction: column; overflow-y: scroll; padding-bottom:40vh;"></div>
             </div>
           </div>
     </body>
@@ -113,6 +113,8 @@
             this.map = BABYLON.MeshBuilder.CreateRibbon("m", {updatable: true, pathArray: this.paths, sideOrientation: 2}, scene);
             this.map.position.y = -1.0;
             var mapMaterial = new BABYLON.StandardMaterial("mm", scene);
+            //var mapMaterial = new BABYLON.diffuseTexture = new BABYLON.Texture("textures/skybox_nx.jpg", scene);
+            mapMaterial.diffuseTexture = new BABYLON.Texture("textures/groundTexture.png", scene);
             this.map.material = mapMaterial;    
         }
         get numLayers(){
